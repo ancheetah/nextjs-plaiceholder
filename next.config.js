@@ -22,6 +22,6 @@ module.exports = bundleAnalyzer({
   },
   env: {
     // expose env to the browser
-    BUILDER_PUBLIC_KEY: process.env.BUILDER_PUBLIC_KEY,
+    BUILDER_PUBLIC_KEY: '492b9fb8f843430fba67137f1f8ec68d',
   },
 })

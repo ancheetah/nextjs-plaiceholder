@@ -1,7 +1,7 @@
 import { Builder } from '@builder.io/react'
 import React from 'react'
 
-export const Heading = (props) => (
+export const Heading = (props: any) => (
   <h1 style={{ color: props.color }}>{props.title}</h1>
 )
 

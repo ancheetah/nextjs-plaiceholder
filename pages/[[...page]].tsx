@@ -27,6 +27,10 @@ export async function getStaticProps({
   if (page) {
     // find your CustomImage component(s) in the blocks
     console.log(
+      'page blocks: ',
+    page.data.blocks[0].children
+    )
+    console.log(
       'custom image url: ',
       page.data.blocks[0].children[1].component.options
     )
@@ -39,10 +43,6 @@ export async function getStaticProps({
     // update the image with the blurDataURL
     page.data.blocks[0].children[1].component.options.src = base64
 
-    console.log(
-      'new image url: ',
-      page.data.blocks[0].children[1].component.options
-    )
   }
 
   return {
